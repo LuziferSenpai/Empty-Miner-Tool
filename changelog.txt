@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
-Version 0.1.0
-  - Release
+Version 0.2.0
+Date: 26.12.2018
+	Changes:
+	- Now really marks only empty Drills
+	- Now really marks only Chests that doesnt get any Input
 ---------------------------------------------------------------------------------------------------
+Version 0.1.0
+Date: 25.11.2018
+	Features:
+	- Marks Miners and Chests when the Miner is empty.
