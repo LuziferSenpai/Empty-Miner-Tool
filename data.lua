@@ -5,7 +5,6 @@ data:extend
 		name = "empty-miner-tool",
 		icon = "__Empty_Miner_Tool__/tool.png",
 		icon_size = 32,
-		flags = { "goes-to-quickbar" },
 		subgroup = "tool",
 		order = "c[automated-construction]-zz[empty-miner-tool]",
 		stack_size = 1,

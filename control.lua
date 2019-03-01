@@ -6,39 +6,50 @@ script.on_event( { de.on_player_selected_area, de.on_player_alt_selected_area },
 	local p = game.players[event.player_index]
 	local f = p.force
 	local s = p.surface
+	local d = {}
+	local c = {}
 
 	for _, e in pairs( event.entities ) do
 		if e.valid then
-		 	if e.type == "mining-drill" and not e.mining_target then
-		 		local d = e.drop_position
-		 		local e1 = s.find_entities_filtered{ position = d, type = { "container", "logistic-container" } }
-		 		if e1[1] ~= nil then
-		 			local e1 = e1[1]
-		 			local b = e1.bounding_box
-		 			local tl = b.left_top
-		 			local br = b.right_bottom
-		 			local t = true
-		 			tl.x = tl.x - 1
-		 			tl.y = tl.y - 1
-		 			br.x = br.x + 1
-		 			br.y = br.y + 1
-		 			local e2 = s.find_entities_filtered{ area = { tl, br }, type = "mining-drill" }
-		 			if e2[1] ~= nil then
-		 				for i, e3 in pairs( e2 ) do
-		 					if e3.mining_target then
-		 						local d1 = e3.drop_position
-		 						local e4 = s.find_entities_filtered{ position = d, type = { "container", "logistic-container" } }
-		 						if e4[1] ~= nil and e4[1].position == e1.position then
-		 							t = false
-		 							break
-		 						end
-		 					end
-		 				end
-		 			end
-		 			if t then
-		 				e1.order_deconstruction( f, p )
-		 			end
-		 		end
+			if e.type == "mining-drill" then
+				table.insert( d, e )
+			elseif e.type == "container" or e.type == "logistic-container" then
+				table.insert( c, e )
+			end
+		end
+	end
+	if d[1] ~= nil then
+		for _, e in pairs( d ) do
+			if not e.mining_target then
+				e.order_deconstruction( f, p )
+			end
+		end
+	end
+	if c[1] ~= nil then
+		local b = {}
+		local tl = {}
+		local br = {}
+		local e1 = {}
+		local t = true
+		for _, e in pairs( c ) do
+			t = true
+			b = e.bounding_box
+			tl = b.left_top
+			br = b.right_bottom
+			tl.x = tl.x - 1
+			tl.y = tl.y - 1
+			br.x = br.x + 1
+			br.y = br.y + 1
+			e1 = s.find_entities_filtered{ area = { tl, br }, type = "mining-drill" }
+			if e1[1] ~= nil then
+				for _, e2 in pairs( e1 ) do
+					if e2.valid and e2.mining_target then
+						t = false
+						break
+					end
+				end
+			end
+			if t then
 				e.order_deconstruction( f, p )
 			end
 		end

@@ -1,17 +1,24 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.3.0
+Date: 01.03.2019
+	Updates:
+	 - Updated to 17
+	Bugfixes:
+	 - Removes finally only Chets without a Miner
+---------------------------------------------------------------------------------------------------
 Version 0.2.1
 Date: 27.12.2018
 	Bugfixes:
-	- Fixed a small Code Error.
-	- Fixed Chests didnt got deconstructed.
+	 - Fixed a small Code Error.
+	 - Fixed Chests didnt got deconstructed.
 ---------------------------------------------------------------------------------------------------
 Version 0.2.0
 Date: 26.12.2018
 	Changes:
-	- Now really marks only empty Drills
-	- Now really marks only Chests that doesnt get any Input
+	 - Now really marks only empty Drills
+	 - Now really marks only Chests that doesnt get any Input
 ---------------------------------------------------------------------------------------------------
 Version 0.1.0
 Date: 25.11.2018
 	Features:
-	- Marks Miners and Chests when the Miner is empty.
+	 - Marks Miners and Chests when the Miner is empty.
