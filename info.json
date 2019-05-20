@@ -1,10 +1,10 @@
 {
   "name": "Empty_Miner_Tool",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "title": "Empty Miner Tool",
   "author": "LuziferSenpai",
   "Licence": "Custom",
-  "description": "Marks Empty Miners and Chests without a running Miner for Deconstruction! Be careful which Chests you mark, it will remove all Chets without a active Miner nearby!",
+  "description": "Marks Empty Miners and Chests without a running Miner for Deconstruction!",
   "dependencies": ["base >= 0.17"],
   "factorio_version": "0.17"
 }
