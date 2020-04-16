@@ -1,5 +1,41 @@
-data:extend
+data:extend(
 {
+    {
+        type = 'custom-input',
+        name = 'get-empty-miner-tool',
+        key_sequence = "",
+        action = 'create-blueprint-item',
+        item_to_create = 'empty-miner-tool',
+        consuming = 'none'
+    },
+    {
+        type = 'shortcut',
+        name = 'empty-miner-tool',
+        action = 'create-blueprint-item',
+        item_to_create = 'empty-miner-tool',
+        style = 'red',
+        icon = {
+            filename = "__Empty_Miner_Tool__/tool.png",
+            priority = 'extra-high-no-scale',
+            size = 32,
+            scale = 1,
+            flags = {'icon'},
+        },
+        small_icon = {
+            filename = "__Empty_Miner_Tool__/toolx24.png",
+            priority = 'extra-high-no-scale',
+            size = 24,
+            scale = 1,
+            flags = {'icon'},
+        },
+        disabled_small_icon = {
+            filename = "__Empty_Miner_Tool__/toolx24grey.png",
+            priority = 'extra-high-no-scale',
+            size = 24,
+            scale = 1,
+            flags = {'icon'},
+        },
+    },
 	{
 		type = "selection-tool",
 		name = "empty-miner-tool",
@@ -17,3 +53,4 @@ data:extend
     	show_in_library = true
     }
 }
+)
