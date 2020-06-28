@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.3.3
+Date: 26.06.2020
+  Changes:
+    - Added a recipe to get the tool
+---------------------------------------------------------------------------------------------------
 Version: 0.3.2
 Date: 24.01.2020
   Changes:
@@ -7,29 +12,28 @@ Date: 24.01.2020
 Version: 0.3.1
 Date: 20.05.2019
   Changes:
-	- Now removes Chests, where are only empty Miners besides!
+    - Now removes Chests, where are only empty Miners besides!
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.0
 Date: 01.03.2019
-  Updates:
+  Features:
     - Updated to 17
   Bugfixes:
-	- Removes finally only Chets without a Miner
----------------------------------------------------------------------------------------------------             
-Version 0.2.1
+    - Removes finally only Chets without a Miner
+---------------------------------------------------------------------------------------------------
+Version: 0.2.1
 Date: 27.12.2018
   Bugfixes:
-	- Fixed a small Code Error.
-	- Fixed Chests didnt got deconstructed.
----------------------------------------------------------------------------------------------------          
-Version 0.2.0
+    - Fixed a small Code Error.
+    - Fixed Chests didnt got deconstructed.
+---------------------------------------------------------------------------------------------------
+Version: 0.2.0
 Date: 26.12.2018
   Changes:
-	- Now really marks only empty Drills
-	- Now really marks only Chests that doesnt get any Input
----------------------------------------------------------------------------------------------------             
-Version 0.1.0
+    - Now really marks only empty Drills
+    - Now really marks only Chests that doesnt get any Input
+---------------------------------------------------------------------------------------------------
+Version: 0.1.0
 Date: 25.11.2018
   Features:
-	- Marks Miners and Chests when the Miner is empty.
-              
+    - Marks Miners and Chests when the Miner is empty.

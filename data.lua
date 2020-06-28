@@ -11,9 +11,15 @@ data:extend
 		selection_color = { r = 154, g = 0, b = 48 },
 		alt_selection_color = { r = 154, g = 0, b = 48 },
 		selection_mode = { "buildable-type" },
-    	alt_selection_mode = { "buildable-type" },
-    	selection_cursor_box_type = "copy",
-    	alt_selection_cursor_box_type = "copy",
-    	show_in_library = true
-    }
+		alt_selection_mode = { "buildable-type" },
+		selection_cursor_box_type = "copy",
+		alt_selection_cursor_box_type = "copy",
+		show_in_library = true
+	},
+	{
+		type = "recipe",
+		name = "empty-miner-tool",
+		ingredients = {},
+		result = "empty-miner-tool"
+	}
 }
