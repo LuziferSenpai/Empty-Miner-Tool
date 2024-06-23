@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 23.06.2024
+  Changes:
+    - Adjusted code to be more efficient
+    - Alt mode now cancels selected miners & chests
+    - Alt Mode & normal mode now ONLY select mining drills, that dont have a fluid output
+  Features:
+    - Added a shortcut to get the tool, removed the recipe
+---------------------------------------------------------------------------------------------------
 Version: 0.3.4
 Date: 24.11.2020
   Changes:

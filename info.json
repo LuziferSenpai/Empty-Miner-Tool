@@ -1,11 +1,11 @@
 {
     "name": "Empty_Miner_Tool",
-    "version": "0.3.4",
+    "version": "1.0.0",
     "title": "Empty Miner Tool",
     "author": "LuziferSenpai",
-    "contact": "mods@luzifersenpai.de",
-    "homepage": "luzifersenpai.de",
-    "description": "Marks Empty Miners and Chests without a running Miner for Deconstruction!",
+    "contact": "",
+    "homepage": "",
+    "description": "A tool to select empty mining drills & chests in front of empty mining drills.",
     "dependencies": ["base"],
     "factorio_version": "1.1"
 }

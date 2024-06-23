@@ -1,10 +1,3 @@
 # Empty-Miner-Tool
 
-Hey Guys,
-
-this is a new little Tool that removes Empty Miners and Chests without a active Miner!
-
-## Supported Languages:
-
- - English
- - German
+A tool to select empty mining drills & chests in front of empty mining drills.
